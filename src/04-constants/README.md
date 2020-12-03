@@ -14,8 +14,8 @@
 - Go's strong typing policy disallows variables of one type to be assigned to another. Even assign one type to its alias.
     ```
     var defaultName = "Sam" //allowed
-        type myString string
-        var customName myString = "Sam" //allowed
-        customName = defaultName //not allowed
+    type myString string
+    var customName myString = "Sam" //allowed
+    customName = defaultName //not allowed
     ```
 
