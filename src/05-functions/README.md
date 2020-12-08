@@ -15,3 +15,20 @@ func functionName(param type) returnType {
     }
     ```
 
+- Multiple return values:
+    ```
+    func rectProps(length, width float64)(float64, float64) {  
+        var area = length * width
+        var perimeter = (length + width) * 2
+        return area, perimeter
+    }
+    ```
+
+- Named return values from a function. If a return value is named, it can be considered as being declared as a variable in the first line of the function.
+    ```
+    func getRectPros(length, width float64) (area, perimeter float64) {
+
+    }
+    ```
+
+- Blank identifier: ```_``` can be used in place of any value of any type.
