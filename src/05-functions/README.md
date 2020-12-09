@@ -15,3 +15,8 @@ func functionName(param type) returnType {
     }
     ```
 
+## Notes
+- It is possible to return multiple values from a function.
+- If a function returns multiple return values then they must be specified between ```( )```. 
+- It is possible to return named values from a function.
+
