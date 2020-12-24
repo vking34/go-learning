@@ -27,3 +27,6 @@
     ```
 
 - In Go, the control comes out of the switch statement immediately after a case is executed. A ```fallthrough``` statement is used to transfer control to the first statement of the case that is present immediately after the case which has been executed.
+
+- Fallthrough happens even when the case evaluates to false
+
