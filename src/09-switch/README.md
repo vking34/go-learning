@@ -30,3 +30,4 @@
 
 - Fallthrough happens even when the case evaluates to false
 
+- ```break``` in ```switch``` without label, the switch statement will only be broken and the loop will continue running.
