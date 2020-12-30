@@ -49,7 +49,17 @@ func main() {
 
 	fmt.Println("-----------------------")
 	// slices
+	a3 := [5]int{34, 23, 21, 56, 88}
+	var s1 []int = a3[1:4]
+	fmt.Println(s1)
+
+	// modify
+
+	fmt.Println("-----------------------")
 	// append
+	s1 = append(s1, 11)
+	fmt.Println(s1)
+
 	cars := []string{"Ferrari", "Honda", "Ford"}
 	fmt.Println("cars:", cars, "has old length", len(cars), "and capacity", cap(cars)) //capacity of cars is 3
 	cars = append(cars, "Toyota")
