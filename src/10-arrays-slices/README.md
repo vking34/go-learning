@@ -26,7 +26,17 @@
         ```
         c := []int{6, 7, 8}
         ```
-    
+
+- A slice is a convenient, flexible and powerful wrapper on top of an array. Slices do not own any data on their own. They are the just references to existing arrays.
+- It is just a representation of the underlying array. Any modifications done to the slice will be reflected in the underlying array.
+
+- ```capacity```: the number of elements in the underlying array starting from the index from which the slice is created.
+
+- A slice can be re-sliced upto its capacity. Anything beyond that will cause the program to throw a run time error.
+
+- methods:
+    - ```make```: func make([]T, len, cap) []T
+
 - When new elements are appended to the slice, a new array is created. The elements of the existing array are copied to this new array and a new slice reference for this new array is returned. The capacity of the new slice is now twice that of the old slice.
 
 - the zero value of a slice type is ```nil```.
@@ -48,3 +58,4 @@
     - Lets assume that we have a very large array and we are interested in processing only a small part of it. The important thing to be noted here is that the array will still be in memory since the slice references it.
     - Ways to solve:
         - the ```copy``` function: 
+

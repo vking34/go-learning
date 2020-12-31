@@ -30,4 +30,9 @@
 
 - Fallthrough happens even when the case evaluates to false
 
-- ```break``` in ```switch``` without label, the switch statement will only be broken and the loop will continue running.
+- ```fallthrough``` can not in the final case
+
+- ```break``` in ```switch``` without label, the switch statement will only be broken and the loop will continue running. ```break``` statement can be used to terminate a switch early before it completes.
+
+- if ```switch``` is inside a for loop and we want to terminate early, we can label the for loop and ```break``` label when meet the condition.
+    - if the break statement is used without the label, the switch statement will only be broken and the loop will continue running.

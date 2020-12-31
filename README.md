@@ -22,3 +22,11 @@
     ```
     $ sudo snap install go --channel=1.14/stable --classic
     ```
+
+## Workspace
+1. Install recommended packages
+    - ```ctrl + shift + P```
+    - type: go install/update tools
+    - install tools
+
+2. To fix issues with ```gopls```, just add a new workspace with ```src```
