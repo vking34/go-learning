@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Employee struct for example
 type Employee struct {
 	name     string
 	salary   int
