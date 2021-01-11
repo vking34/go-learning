@@ -42,7 +42,7 @@ func main() {
 	printBytes(s)
 	fmt.Printf("\n")
 
-	//
+	// print char using rune
 	unicodeStr := "Señor"
 	fmt.Println("String:", unicodeStr)
 	fmt.Println("Length:", len(unicodeStr))
