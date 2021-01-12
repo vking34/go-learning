@@ -13,7 +13,7 @@
 
 ## Notes
 - Zero value of pointer: ```nil``
-- Another handy way to create a pointer is using ```new()``` function
+- Another handy way to create a pointer is using ```new()``` function. The ```new``` takes type as argument and returns a pointer to a newly zero value of that type.
 - Do not pass a pointer to an array as a argument to a function. Use slice instead.
 - Go does not support pointer arithmetic
     - For example, p is a pointer. ```p++``` is not allowed.
