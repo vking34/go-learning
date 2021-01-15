@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
+<<<<<<< HEAD
 //
+=======
+>>>>>>> dbbf7bab520f4a0d626ccc52be1da5623c78f526
 type VowelsFinder interface {
 	FindVowels() []rune
 }
@@ -13,7 +16,11 @@ func (str MyString) FindVowels() []rune {
 	var vowels []rune
 
 	for _, rune := range str {
+<<<<<<< HEAD
 		if rune == 'a' || rune == 'e' || rune == 'o' || rune == 'u' || rune == 'i' {
+=======
+		if rune == 'a' || rune == 'e' || rune == 'o' || rune == 'i' || rune == 'u' {
+>>>>>>> dbbf7bab520f4a0d626ccc52be1da5623c78f526
 			vowels = append(vowels, rune)
 		}
 	}
@@ -26,6 +33,7 @@ func printVowels(vowels []rune) {
 	for _, rune := range vowels {
 		fmt.Printf("%s ", string(rune))
 	}
+<<<<<<< HEAD
 	fmt.Print("\n")
 }
 
@@ -88,12 +96,18 @@ func assert(i interface{}) {
 
 func main() {
 	// Declaration
+=======
+}
+
+func main() {
+>>>>>>> dbbf7bab520f4a0d626ccc52be1da5623c78f526
 	name := MyString("Vuong")
 	var v VowelsFinder
 	v = name
 	vowels := v.FindVowels()
 	fmt.Printf("Vowels: %c\n", vowels)
 	printVowels(vowels)
+<<<<<<< HEAD
 
 	// Practice
 	pEmp1 := PermanentEmployee{
@@ -147,4 +161,6 @@ func main() {
 	var noun interface{} = "Screen"
 	assert(noun)
 
+=======
+>>>>>>> dbbf7bab520f4a0d626ccc52be1da5623c78f526
 }

@@ -22,3 +22,5 @@
 
 - Type switch:
     - Used to compare the concrete type of an interface against multiple types specified in various case statements. It is similar to switch case. The only difference is the case specify types and not value as in normal switch
+
+- Interface is a set of method signatures. When a type provides definitions of all the methods in the interface, it is said to implement interface
