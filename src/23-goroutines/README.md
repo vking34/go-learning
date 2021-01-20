@@ -14,7 +14,7 @@
 ## Fundamentals
 - When a new Goroutine is started, the goroutine call returns immediately. Unlike functions, __the control does not wait for the Goroutine to finish executing. The control returns immediately to the next line of code after the Goroutine call__ and any return values from the Goroutine are ignored.
 
-- The main Goroutine should be running for any other Goroutines to run. If the main Goroutine terminates then the program will be terminated and no other Goroutine will run.
+- The main Goroutine should be running for any other Goroutines to run. If the __main Goroutine terminates__ then the program will be terminated and __no other Goroutine will run__.
 
 - This way of using ```sleep``` in the main Goroutine to wait for other Goroutines to finish their execution is a hack we are using to understand how Goroutines work. Channels can be used to block the main Goroutine until all other Goroutines finish their execution.
 
