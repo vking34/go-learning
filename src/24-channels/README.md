@@ -35,3 +35,7 @@ a <- data // write to channel a
     v, isOpen := <- ch  
     ```
 - The __value__ read from a __closed channel__ will be the __zero value of the channel's type__.
+
+## Loop on channel
+- The for range form of the for loop can be used to receive values from a channel until it is closed.
+
