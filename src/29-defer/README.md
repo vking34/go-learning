@@ -10,6 +10,6 @@
     - When a function has multiple defer calls, they are pushed on to a stack and executed in Last In First Out (LIFO) order.
 
 - Advantages:
+    - Stack of defers
     - No need to call multiple times of a function before return.
-    - 
     
