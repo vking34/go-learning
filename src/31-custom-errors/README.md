@@ -27,3 +27,7 @@
 ## Providing more information about the error using struct type and fields
 - It is also possible to use struct types which implement the error interface as errors. This gives us more flexibility with error handling.
 - Creating a struct type that implements the error interface and using its fields to provide more information about the error will not break our code.
+
+- The naming convention for error types is that the name should __end with the text ```Error```__
+
+## Providing more information about error using methods on struct types.
