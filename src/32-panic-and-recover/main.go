@@ -2,11 +2,32 @@ package main
 
 import (
 	"fmt"
+	"runtime/debug"
 )
+
+func recovery() {
+	if r := recover(); r != nil {
+		fmt.Println("recovered:", r)
+	}
+}
+
+func sum(a int, b int) {
+	defer recovery() // can not recover the panic from the divide goroutine
+	fmt.Printf("%d + %d = %d\n", a, b, a+b)
+	done := make(chan bool)
+	go divide(a, b, done)
+	<-done // wait the divide goroutine
+}
+
+func divide(a int, b int, done chan bool) {
+	fmt.Printf("%d / %d = %d", a, b, a/b) // panic: divide by zero
+	done <- true
+}
 
 func recoverFullName() {
 	if r := recover(); r != nil {
 		fmt.Println("recovered from", r)
+		debug.PrintStack()
 	}
 }
 
@@ -27,4 +48,7 @@ func main() {
 	firstName := "Vuong"
 	fullName(&firstName, nil)
 	fmt.Println("returned normally from main")
+
+	// sum(5, 0)
+	// fmt.Println("normally returned from main")
 }

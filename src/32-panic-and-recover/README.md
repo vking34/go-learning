@@ -24,3 +24,9 @@
 - recover is a builtin function that is __used to regain control of a panicking program.__
 
 - Recover is useful only when __called inside deferred functions__. Executing a __call to recover inside a deferred function stops the panicking sequence by restoring normal execution and retrieves the error message passed to the panic function call__. If __recover is called outside the deferred function__, it will __not stop a panicking sequence__.
+
+-  Getting Stack trace after recover:
+    - If we recover from a panic, we lose the stack trace about the panic. Even in the program above after recovery, we lost the stack trace.
+    - There is a way to print the stack trace using the ```PrintStack``` function of the ```debug``` package
+
+- Recover __works only__ when it is called from the __same goroutine__ which is panicking. It's __not possible to recover from a panic that has happened in a different goroutine__. 
