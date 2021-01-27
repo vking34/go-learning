@@ -49,7 +49,7 @@ func main() {
 		fmt.Println(string(chunk[0:n]))
 	}
 
-	//
+	// read file line by line
 	fmt.Println("---------------------------")
 	fmt.Println("Contents of test1.txt file in line by line:")
 	f1, err := os.Open(*fptr)

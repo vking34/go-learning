@@ -14,5 +14,5 @@
 
 ## Run app
 ```
-go run main -f=./test.txt -fs=
+go run main -f=./test.txt -fs=./test1.txt
 ```
